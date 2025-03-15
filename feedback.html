@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+<body class="f">
+    <header>
+        <a href="home.html">Home</a>
+        <a href="ss.html">Solar System</a>
+        <a href="miss.html">Mission</a>
+        <a href="feedback.html" style="text-decoration: underline; font-weight: bold;">Contact</a>
+    </header>
+    <div class="chip">
+       <a href="https://www.instagram.com/miruna.m25/"><img src="avatar.jpg" alt="Person" width="96" height="96"></a>
+        Burlacu Maria-Miruna
+      </div>
+      <br><br><br>
+      <form name="myForm" onsubmit="return validateForm()">
+        <table class="form-style">
+           <tr>
+              <td>
+                 <label>
+                    Your name <span class="required">*</span>
+                 </label>
+              </td>
+              <td>
+                 <input type="text" name="name" class="long"/>
+                 <span class="error" id="errorname"></span>
+              </td>
+           </tr>
+           <tr>
+              <td>
+                 <label>
+                   Your email address <span class="required">*</span>
+                 </label>
+              </td>
+              <td>
+                 <input type="email" name="email" class="long"/>
+                 <span class="error" id="erroremail"></span>
+              </td>
+           </tr>
+           <tr>
+              <td>
+                 <label>
+                    Message <span class="required">*</span>
+                 </label>
+              </td>
+              <td>
+                 <textarea name="message" class="long field-textarea"></textarea>
+                 <span class="error" id="errormsg"></span>
+              </td>
+           </tr>
+           <tr>
+              <td></td>
+              <td>
+                 <input type="submit" value="Send">      
+                 <input type="reset" value="Reset"> 
+              </td>
+           </tr>
+        </table>
+     </form>    
+</body>
+<script src="script.js"></script>
+</html>
